@@ -5,34 +5,34 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
-import { AddTaskComponent } from './add-task/add-task.component';
-import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { ListUsersComponent } from './list-users/list-users.component';
-import { ViewProfilesComponent } from './view-profiles/view-profiles.component';
-import { ViewProfileComponent } from './view-profile/view-profile.component';
-import { ListTasksComponent } from './list-tasks/list-tasks.component';
-import { ChangePasswordComponent } from './change-password/change-password.component';
-import { HomeComponent } from './home/home.component';
+import { AddTaskComponent } from './add-task/add-task.component';
 import { HeaderComponent } from './header/header.component';
+import { HomeComponent } from './home/home.component';
+import { EditTaskComponent } from './edittask/edittask.component';
+import { ViewUserComponent } from './view-user/view-user.component';
+import { EditUserComponent } from './edit-user/edit-user.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
     LoginComponent,
-    AddTaskComponent,
-    ForgotPasswordComponent,
     ListUsersComponent,
-    ViewProfilesComponent,
-    ViewProfileComponent,
-    ListTasksComponent,
-    ChangePasswordComponent,
+    AddTaskComponent,
+    HeaderComponent,
     HomeComponent,
-    HeaderComponent
+    EditTaskComponent,
+    ViewUserComponent,
+    EditUserComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
